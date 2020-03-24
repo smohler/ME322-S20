@@ -20,28 +20,28 @@ We could move fluid AROUND an air foil. Nerds call this (EXTERNAL FLOW)
 We could move fluid OVER a plate. Nerds call lthis (BOUNDARY LAYER ANALYSIS)
 
 Oh man we have even begun to talk about how we haven't defined FLUID at all!
-The fluid could be an oil and have properties that make it very nice (LAMINAR FLOW)
-The fluid could be water in which case it lives in this wonderful inbetween (LAMINAR/TURBULENT)
-The fluid could even be a gas and as hard as we try we have consider this issue of density (COMPRESSIBLE FLOW)
+The fluid could be an oil and have properties that make it very nice (LAMINAR FLOW).
+The fluid could be water in which case it lives in this wonderful inbetween (LAMINAR/TURBULENT).
+The fluid could even be a gas and as hard as we try we have consider this issue of density (COMPRESSIBLE FLOW).
 
 That is why you have to take this class. 
 You have to have some reasonable intuition about the answers to these questions given an enormous amount of requirements
-You need to tell you boss the dimensions of a pipe. 
+You need to tell you boss the dimensions of a pipe to use. 
 You need to tell your boss what pump to buy. 
 You need to tell your boss what how much force is on an airblade, boat propeller, or structure.
-The blade are made of certain materials and they can't take whatever you throw at them. 
+The blades are made of certain materials and they can't take whatever you throw at them. 
 Likewise the blades are made of certain materials so you better get all you can get out of them. 
 
 So this class is trying to prepare you to beable to at least navigate a roadmap to any of these types of questions.
-So first we are going to ask a bunch of questions concerning a pipe. 
+So first we are going to ask a bunch of questions concerning a pipes. 
 Then we are going ask a bunch of questions about fluid moving around something. 
-Then we are going to ask a bunch of question about what happens if its a gas and not a liquid. 
+Then we are going to ask a bunch of questions about what happens if its a gas and not a liquid. 
 Sometimes if we have time we get to ask about gas moving and EXPLODING!
 
 Now since this is an engineering class, 
-and since a bunch of people didnt have computers, 
+and since back in the day a bunch of people didnt have computers, 
 we get to study mathematical expressions they wrote down at one point. 
-Before it was just people with pen and paper, and people with devices to measure things.
+Early science was just people with pencil and paper, and people with devices to measure things.
 The solutions we look at agree pretty well with the experiments so I like em, I believe in them. 
 Okay so the solution exists, why see how they got there (DERIVATIONS YUCK UGH GROSS!)
 Well is everyone confident I could just assign you the entire problem set and projects and you could google your way to an answer?
@@ -56,10 +56,16 @@ Okay well that's problematic too.
 So if we want to only have computers solve them how DOES the computer give you an answer.
 Well all computers are doing are discretizing a continuous differential equaiton.
 So derivations help us make our own roadmaps to come up with our own equations to then shove into a computer. 
-We just need the ONE equation! 
+Some can still say though, we just need the ONE equation! 
 So everytime there is fluid interacting with a body solve the complete 3D Naviar Stokes in a CFD program. 
 I imagine all of you understand computation takes time and that's a bit rediculous. 
 In fact sometimes these simple solutions really aren't that far off from the super advanced computer solution that took months to run.
+Sometimes I like to think about the additional energy requirments we now need to calculate simple things, and if this energy has proved its value over simple expressions.
+Mechanically all our designs are just now optimized through computer design, rarely a new paradigm mechanical solution comes about.
+It is my opinion that this is because mecahnical designs aren't made with numbers, 
+they aren't made with equations, 
+they are made by first-principles. 
+They are argued and experimented on because of a belief in fundemental laws engineers can hold in their brain without the actual calculation. 
 
 I wished I took more time to appreciate the roadmap honestly.
 I spent far to much time in my undergrad scouring the internet for my exact problem.
@@ -67,14 +73,15 @@ This just isnt a good use of time.
 I honestly want those hours back!
 
 It seems this is just my obligatory soap box to try and keep this career alive. 
-What I mean is applied fluids could be in some sense just a lesson in software. 
+What I mean is applied fluids could be in some sense be just a lesson in a specific software. 
 There is piping system software used in building analysis. 
 There is very good software for CFD.
 There is specialized software for airfoils.
 Okay but who made that software, do you think it was mechanical engineerings. 
 Yeah they were engineers but they were software-engineers not mechanical.
-Also If someone is going to pay you a bunch of money they better be getting more than someone that knows how to use a program.
-The ONLY advantage we have left is that we can be quicker than a program actually. 
+Also, if someone is going to pay you a bunch of money they better be getting more than someone that knows how to use a program.
+The ONLY advantage we have left is that we can be quicker than a program actually.
+We actually have the advantage that we know what assumptions can make a program faster and still approximately accurate.  
 We can leverage reasoning from the physics to get an answer first. 
 We can leverage these solutions to come up with design solutions.
 We can understand terms to say "no no no that will definitely increase the flowrate."

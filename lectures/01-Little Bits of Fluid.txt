@@ -1,1 +1,18 @@
 reading 6.1 - 6.3
+
+First thing is first. We need to describe the velocity of fluid in mathematical terms. 
+How do we do that?
+Well we have to imagine ourselve where they were in the 1800s. 
+All we know is F=ma.
+That equation was only good for idealized point particles.
+For a rigid body it applies to the center of mass of the body. 
+But a fluid is different, it is NOT rigid. 
+We need to extend this equation to a continuous jelly region of fluid. 
+
+So lets draw a lit bit of fluid and ask how fast it is moving. 
+We first need a coordinate system then. 
+We need some framework to beable to put a number to where something is. 
+
+HW FOCUS: Streamline calculations
+
+EXAM FOCUS: Intuition about differential explanation of fluids
