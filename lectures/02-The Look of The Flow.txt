@@ -1,1 +1,14 @@
 read 8.1-8.2
+
+This a pure motivational lecture that trys to set the stage for things we need to answer.
+There is clearly a difference between laminar and turbulent flows,
+but how does that effect quantities we care about. 
+We also get our first look at defending a certain assumption commonly made in fluid analysis. 
+This issue of 'fully developed'. 
+We get an expression that allow us engineers to calculate when our problems satisfy this assumption. 
+
+
+HW FOCUS: Calculate Reynolds numbers, Calculating entrance lengths, 
+describe laminar vs turbulent in more quantitative and qualitative terms. 
+
+EXAM FOCUS: Beable to plot entrance effects. 
