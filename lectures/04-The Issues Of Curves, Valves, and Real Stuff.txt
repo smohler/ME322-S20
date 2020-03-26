@@ -1,0 +1,25 @@
+read 8.4
+
+All the work before was to get this friction term. 
+We were trying to calculate the losses in pipe due to simply flowing thru the pipe itself. 
+We utilized the energy equation to do this. 
+This is because losses is a fancy word for an energy requirement.
+We take the exact same methodology and apply it to elbows, curves, and piping components.
+We can do some math magic as well and come up with a way to redraw our pipin systems as one straight pipe. 
+This is similar to effective resistor networks, we jsut called them effective lengths. 
+
+These expression require experimental coefficients, so we've left the totally theoretical. 
+When ever you buy a piping component ou can actually find these values.
+The manufacturer tested them rigourously to give you this number confidently.
+
+The losses attributed to these components are called minor losses.
+That is because you will see most of the energy needed it to simply flow through the darn pipe.
+The last part of straight tube is if it is non-circular (like a rectangle). 
+It almost seems like a trivial fix we do,
+but I promise it is based on a rigourous infinite series soluiton.
+
+
+HW FOCUS: calcualting minor losses. Calculating effective lengths. Hydraulic diameter.
+Calculating requirements for simple piping systems including the effects of all the components.
+
+EXAM FOCUS: Graphing piping systems. Understand the limitation of this energy equation.  

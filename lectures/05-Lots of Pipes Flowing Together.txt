@@ -1,0 +1,18 @@
+read 8.5 - 8.6
+
+That was all just one straight pipe we did. 
+The next process is what every real building has. 
+Lots of pipes running in parallel and series. 
+In reality everything we have done up until this point is only useful for 10% of engineering problems.
+But the expressions and methods extend to an entire network of pipes.
+We then formulate the Hardy-Cross method.
+This is a recipe for a computer to spit out all the quanitities we've been calculating all this time.
+It can do it for more massive systems, systems that make the human brain seem feeble and weak.
+We will see how they end up looking alot like circuits, in certain cases.
+
+NOTE: I've actually extended this section from previous lecture notes because everyone wanted 
+real world example and well...this is the real world type problem. 
+
+HW FOCUS: Parallel and Series pipe systems (flowrate, dimensions, etc).  
+
+EXAM FOCUS: Describe the Hardy-Cross method. Know when it is NOT exactly like electrical circuits. 

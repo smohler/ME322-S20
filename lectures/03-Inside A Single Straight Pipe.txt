@@ -1,0 +1,33 @@
+read 8.3
+
+This lecture is the derivation of the steady, fully developed, laminar flow in a straight pipe. 
+The mathematical solution, the expression, we get is so fundamental...like I can't even. 
+It has gone on to inspire almost everything about pipe flow, non-circular duct flows, or all internal flow.
+The solution allows us to calculate shear stresses (for laminar or turbulent flows).
+We get an expression for flowrate in the pipe. 
+We can calculate the average velocity of fluid in the pipe. 
+We then take our solution and formulate a Darcy Friction factor "f". 
+This term helps us detetmine the viscous losses (how much energy is needed to overcome) long straight sections of pipe.
+
+Then we go into the problem of turbulence in pipes. (most pipe applications are turbulent) 
+There is a remarkable similarity to the techniques used in the round spherical cow solution (laminar).
+Essentially everything comes down to "what is the velocity profile u(r)."
+You will see that everything is a consequence of getting this u(r) expression. 
+Turbulence uses reasonable assumptions and scaling arguements to estimate this u(r).
+We then cut to the chase and cite some amazing formulas for the same friction factor "f" if the flow is turbulent.
+99% of the time your problems will be turbulent so these nasty formulae are things we should get good at. 
+You have to solve one of them with an iterative algorithm.
+
+Roughness is also addressed in these equation.
+
+HW FOCUS: Using a moody chart (I'd much rather you write a program though that does this automatically)
+Tables are like extremely out of date and I think we need to advance as mechanical engineers. 
+Using the colebrook equation. 
+
+EXAM FOCUS: Each term of the laminar solution. Explaining where the Moody chart comes from.
+Understanding the difference of laminar and turbulent methods. Posing dimensional functional form assumptions. 
+
+
+
+
+ 
