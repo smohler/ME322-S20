@@ -1,1 +1,13 @@
 read 12.1-12.4
+
+We shift the focus now to now the selection of this pump drawing in our piping networks. 
+We have always simply assumed the pump gave us an added energy. 
+Well were does that number come from?
+How can we estimate the preformance of the pump before buying it.
+
+Before we solved problems to try and find appropriate dimensions.
+This isn't always the case though. 
+Sometime we can't change the piping system dimensions. 
+We are restricted to simply upgrading the pump, the energy giver.
+
+So here we investigate the physical nature of different pumps. 
