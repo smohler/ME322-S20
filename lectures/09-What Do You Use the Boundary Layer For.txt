@@ -1,1 +1,12 @@
 read 9.3-9.4
+
+We use this entire lecture to summarize the expressions we've developed. 
+From the first principles of a boundary layer we can calculate lots of forces. 
+These forces help planes fly. 
+This boundary layer or realted quantities can be found in alot of equations. 
+The methods to derive the boundary layer also help us rationalize curved surfaces. 
+If you put a sphere in a flow field you can see a "seperation" occur. 
+This is why there are dimples on a golf ball. 
+This effect of seperation can be calculated and we see a different kind of pressure gradient. 
+Curved surface require us to consider streamlines and again energy. 
+We see how reynolds numbers are a main independent quanitity in most problems. 

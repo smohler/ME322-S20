@@ -1,1 +1,16 @@
 read 9.2
+
+We begin our bottom up approach by zooming close into a surface that is sittin in a flow field.
+This is called the boundary layer.
+The scales involved allow us to simplify the navier stokes equations. 
+This new set of impossible partial differential equations are called the Boundary Layer Equations. 
+You can get a PhD simply studying these bad kahunas alone. 
+
+Two quantities that you use alot are the "displacement" and "momentum" thickness. 
+We will see how these are defined. 
+How to use them. 
+How to interpret them. 
+Skin friction is also related to this boundary layer and we will see the explicit dependence to the Reynolds.
+This answer the question how much force does it take to slide past a body. 
+This question perplexed alot of fluids people back in the early days of flight. 
+There is no way to account for this skin friction without the analysis we've done.

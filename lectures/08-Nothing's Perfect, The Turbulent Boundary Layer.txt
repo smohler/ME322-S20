@@ -1,1 +1,15 @@
 read 9.2
+
+The turbulent boundary layer is a different beast.
+Most flows in practice are turbulent though. 
+Very similar to internal flow though most expressions look remarkably similar accept correction terms.
+At this point it should be burned into your brain that if we can write down a velocity distribution u(y),
+we can calculate a whole ton of stuff. 
+
+Turbulence is difficult, but alot of the hard work is in estimating this u(y).  
+We can just start from there and get all the expressions. 
+However it is very important we know when and when not to use these expressions.
+The assumptions must be memorized to great detail. 
+
+Just as in laminar flow the point is to beable to calculate a drag coefficient. 
+The drag coefficient in turbulent flows are more complicated but the general idea is the same.

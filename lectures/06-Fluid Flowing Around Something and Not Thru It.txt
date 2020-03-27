@@ -1,1 +1,27 @@
 read 9.1-9.2
+
+We now develop tools to consider fluid moving around a body. 
+All the calculations we developed earlier were for internal flows (pipes).
+It is clear that there is something fundamentally different about external flow just from looking at it.
+The first qualitative difference is that if we put dye, or streamline visualizers in the flow, 
+we notice that "far away from the body" all the streamlines look parallel. 
+We also notice that "close to the body" the streamlines deviate around the body. 
+This deviation can sometimes be quite beautiful in images.
+
+We already know that a body in a flow field a force.
+Just like when you put your hand out the window you feel the pressure, the force.
+This is called drag.
+You are feeling the force needed to push the air molecules out of you're way. 
+This concept of viscous fluid that we've developed illuminates a completely different force though.
+It is the skin friction of the body. 
+You are feeling the force of the air molecule dragging across your skin as they flow past you're skin. 
+
+This entire section of the course in external flow is all about calculating these numbers. 
+We develop it from the ground up however. 
+Just like internal flow, we start with the little bits of fluids and work our way up to the bulk effects. 
+
+HW FOCUS: calculate boundary layer thickness, calculate drag and skin friction, drag coefficient
+
+EXAM FOCUS: describe scale analysis, draw the boundary layer, 
+draw the momentum and displacement thickness and describe their meaning, the 4 steps of boundary layer analysis. 
+
