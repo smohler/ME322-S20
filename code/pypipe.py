@@ -19,11 +19,18 @@ class pypipe:
     mu = {'water':0.001307} #[N s/m^2]
 
     #material properties 
-    roughness = {'steel':0.045} #[mm]
+    roughness = {'commercial steel': 0.045,
+                 'riveted steel': 9,
+                 'concrete': 3,
+                 'wood': 0.9,
+                 'cast iron': 0.26,
+                 'galvanized iron': 0.15,
+                 'drawn tubing': 0.0015,
+                 'glass': 0}  # [mm]
 
-    # TODO Write a dictionary with roughness values in SI
 
-    def __init__(self, diameter, length, material = 'steel', fluid = 'water'):
+
+    def __init__(self, diameter, length, material = 'commercial steel', fluid = 'water'):
         self.D = diameter
         self.L = length
         self.e = roughness[material]
