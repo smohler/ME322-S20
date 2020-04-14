@@ -6,7 +6,8 @@ class pypipe:
         *length
         *material
         *fluid
-    All units must be in SI but later versions should be able to convert between.    
+    All units must be in SI but later versions should be able to convert between. 
+    This class represents a single straight pipe and all head loss calculations possible.   
     """
     version = '0.0.0'
     #class constants
@@ -15,9 +16,9 @@ class pypipe:
 
     #fluid properties
 
-    # TODO Write a dictionaries with fluid properties in SI
-    rho = {'water':1000} #[kg/m^3]
-    mu = {'water':0.001307} #[N s/m^2]
+    # Write a dictionaries with fluid properties in SI a fluid outputs a tuple.
+    liquids = {'water': (1000, 0.001307),
+                } #([kg/m^3], [N s /m^2])
 
     #material properties 
     roughness = {'commercial steel': 0.045,
@@ -29,27 +30,18 @@ class pypipe:
                  'drawn tubing': 0.0015,
                  'glass': 0}  # [mm]
 
+    #piping components (K values)
+    components = {''}
 
 
+    #constructor methods
     def __init__(self, diameter, length, material = 'commercial steel', fluid = 'water'):
         self.D = diameter
         self.L = length
-        self.e = roughness[material]
-        self.rho = rho[fluid]
-        self.mu = mu[fluid]
-
-
-    #class methods
-
-    def getPipeSchedule(self):
-        #search diameter pipe which best fits manufactured pipe diameters
-        pass
-
-    
-
-    #get head loss
-
-    #magic methods __add__, __main__, __len__, etc methods
+        self.e = self.roughness[material]
+        self.rho, self.mu = self.liquids[fluid]
+        self.Q = 0
+        self.V = 0
 
     def __repr__(self):
         return {'Diameter': self.D, 'Length': self.L, 'Material': self.e, 'Fluid': (self.rho, self.mu)}
@@ -59,6 +51,25 @@ class pypipe:
         return self.L
 
     def __str__(self):
-        #TODO check unit system to display
-        txt = "Diameter:{0}[{unit}]__Length:{1}[{unit}]__Roughness:{2}[{unit}]"
-        return txt.format(self.D, self.L, self.e, unit = self.unit)
+        txt = "Diameter:{0}[m]__Length:{1}[m]__Roughness:{2}[mm]"
+        return txt.format(self.D, self.L, self.e)
+
+    #class methods
+    def setFlowrate(self, flowrate):
+        #set a flowrate thru the pipe
+        self.Q = flowrate # [m^3/s]
+        self.V = 4*flowrate**2/(math.pi * self.D**2) #[m/s]
+
+    def addComponent(self):
+        pass
+
+    def effectiveLength(self):
+        pass
+
+    def majorLoss(self):
+        #calculate the major losses due to overcoming viscous forces
+        #throw error if now flowrate has been assigned
+        return 8*len(self)*self.Q**2/(math.pi^2 * self.g ** self.D**5)
+
+    def minorLoss(self):
+        pass
