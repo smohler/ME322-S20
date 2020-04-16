@@ -16,8 +16,22 @@ class pypipe:
 
     #fluid properties
 
-    # Write a dictionaries with fluid properties in SI a fluid outputs a tuple.
+    # Write a dictionaries with fluid properties in SI a fluid outputs a tuple (density, dynamic viscosity).
     liquids = {'water': (1000, 0.001307),
+               'carbon tetrachloride': (1590, 0.000958), # @ 20 C
+               'ethyl alcohol': (789, 0.00119),          # @ 20 C
+               'gasoline': (680, 0.00031),               # @ 15.6 C
+               'glycerin': (1260, 1.5),                  # @ 20 C
+               'mercury': (13600, 0.00157),              # @ 20 C
+               'SAE 30 oil': (912, 0.38),                # @ 15.6 C
+               'seawater': (1030,0.00120) ,              # @ 15.6 C
+               'air': (1.247, 0.0000176),                # @ 10 C
+               'carbon dioxide': (1.83, 0.0000147),      # @ 20 C
+               'helium': (0.166, 0.0000194),             # @ 20 C
+               'hydrogen': (0.0838, 0.00000884),         # @ 20 C
+               'methane': (0.667, 0.0000110),            # @ 20 C
+               'nitrogen': (1.16, 0.0000176),            # @ 20 C
+               'oxygen': (1.33, 0.0000204)               # @ 20 C
                 } #([kg/m^3], [N s /m^2])
 
     #material properties 
