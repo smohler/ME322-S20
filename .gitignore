@@ -1,3 +1,5 @@
 *.aux
 ~$*
 *.webm
+*.vscode
+__pycache__
