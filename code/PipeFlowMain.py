@@ -76,7 +76,7 @@ def flowRate(L, D, hl, e):
     while True:
         V = ((2*g*hl*D)/(f1*L))**0.5    # calculate velocity based on friction factor guess
         f2 = getFrictionFactor(V,D,e)
-        if f2 == f1:
+        if math.isclose(f2,f1, rel_tol=1e-6): # Check for equality up to floating point error
             Q = (V*math.pi*D**2)/4
             return Q
         else:
@@ -106,7 +106,7 @@ def exactPipeSize(L,Q,hl,e):
         V = (4 * Q) / (math.pi * pipeDiameter1 ** 2)
         f = getFrictionFactor(V, pipeDiameter1, e)
         pipeDiameter2 = ((8*L*Q**2*f)/(math.pi**2*g*hl))**0.2
-        if pipeDiameter2 == pipeDiameter1:
+        if math.isclose(pipeDiameter2, pipeDiameter1, rel_tol=1e-6):  # Check for equality up to floating point error
             return pipeDiameter2
         else:
             pipeDiameter1 = pipeDiameter2
