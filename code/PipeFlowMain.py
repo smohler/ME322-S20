@@ -1,5 +1,38 @@
 import math
 
+# fluid properties
+
+# TODO Implement selectable fluid and implement function to set fluid parameters and roughness
+# using the following dictionaries
+
+# Write a dictionaries with fluid properties in SI a fluid outputs a tuple (density, dynamic viscosity).
+liquids = {'water': (1000, 0.001307),
+           'carbon tetrachloride': (1590, 0.000958),  # @ 20 C
+           'ethyl alcohol': (789, 0.00119),  # @ 20 C
+           'gasoline': (680, 0.00031),  # @ 15.6 C
+           'glycerin': (1260, 1.5),  # @ 20 C
+           'mercury': (13600, 0.00157),  # @ 20 C
+           'SAE 30 oil': (912, 0.38),  # @ 15.6 C
+           'seawater': (1030, 0.00120),  # @ 15.6 C
+           'air': (1.247, 0.0000176),  # @ 10 C
+           'carbon dioxide': (1.83, 0.0000147),  # @ 20 C
+           'helium': (0.166, 0.0000194),  # @ 20 C
+           'hydrogen': (0.0838, 0.00000884),  # @ 20 C
+           'methane': (0.667, 0.0000110),  # @ 20 C
+           'nitrogen': (1.16, 0.0000176),  # @ 20 C
+           'oxygen': (1.33, 0.0000204)  # @ 20 C
+           }  # ([kg/m^3], [N s /m^2])
+
+# material properties
+roughness = {'commercial steel': 0.045,
+             'riveted steel': 9,
+             'concrete': 3,
+             'wood': 0.9,
+             'cast iron': 0.26,
+             'galvanized iron': 0.15,
+             'drawn tubing': 0.0015,
+             'glass': 0}  # [mm]
+
 # assumes Water at 10 deg C
 rho = 999.7 # density [kg/m^3]
 mu = 0.001307 # Dynamic Viscosity [Ns/m^2]
@@ -43,7 +76,7 @@ def flowRate(L, D, hl, e):
     while True:
         V = ((2*g*hl*D)/(f1*L))**0.5    # calculate velocity based on friction factor guess
         f2 = getFrictionFactor(V,D,e)
-        if f2 == f1:
+        if math.isclose(f2,f1, rel_tol=1e-6): # Check for equality up to floating point error
             Q = (V*math.pi*D**2)/4
             return Q
         else:
@@ -52,7 +85,7 @@ def flowRate(L, D, hl, e):
 
 # Determines required pipe size given Pipe length L [m], flowrate Q [m^3/s], headloss hl [m] and roughness [mm]
 # Returns Schedule 40 pipe size, if no appropriate pipe size is found returns 0
-def pipeSize(L, Q, hl, e):
+def sched40PipeSize(L, Q, hl, e):
     pipeChoice = 0
     for i in range(len(pipeDia)):
         D = pipeDia[pipeChoice]  # Select Pipe inner diameter from schedule 40 pipe dimensions
@@ -63,4 +96,18 @@ def pipeSize(L, Q, hl, e):
             return pipeSchedule[pipeChoice]
         pipeChoice += 1
     return 0
+
+
+# Determines required pipe size given Pipe length L [m], flowrate Q [m^3/s], headloss hl [m] and roughness [mm]
+# Returns exact pipe diameter in meters
+def exactPipeSize(L,Q,hl,e):
+    pipeDiameter1 = 0.5  # Roughly the midpoint of schedule 40 pipe sizes
+    while True:
+        V = (4 * Q) / (math.pi * pipeDiameter1 ** 2)
+        f = getFrictionFactor(V, pipeDiameter1, e)
+        pipeDiameter2 = ((8*L*Q**2*f)/(math.pi**2*g*hl))**0.2
+        if math.isclose(pipeDiameter2, pipeDiameter1, rel_tol=1e-6):  # Check for equality up to floating point error
+            return pipeDiameter2
+        else:
+            pipeDiameter1 = pipeDiameter2
 
