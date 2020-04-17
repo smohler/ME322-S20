@@ -23,6 +23,6 @@ def test_results_print(result, func, output, inputs):
     else:
         print('Test {} FAILED: Output:{} not {}'.format(func.__name__, output, func(*inputs)))
 
-test_results_print(test_getFrictionFactor_1, getFrictionFactor, 'True Answer', 'used inputs')
+test_results_print(test_getFrictionFactor_1, pf.getFrictionFactor, 'True Answer', 'used inputs')
 
 
