@@ -1,1 +1,13 @@
 read 12.5-12.6
+
+This lecture goes over the similaity laws used to compare pumps.
+It is a an excercise in the dimensional analysis,
+and to see how from square one an engineer can derive far reaching relationships.
+The most surprising non-dimensional term is the specific speed. 
+This value can tell you the type of pump at optimum performance to use based on requirements. 
+It is amazing that this order of magnitude scale arguments work at all really. 
+The take away is that they are ALL rooted in physical arguments. 
+The ability to abstract your problem to an unknown function you will never know 
+and dimensional inputs/output which you know you can measure allows for amazing analysis. 
+Selecting pumps concludes here, as now you know the GOAL of pump selection.
+You also know methods to acheive that goal such as changing K, multiple pumps, etc. 

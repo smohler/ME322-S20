@@ -1,1 +1,21 @@
 read 12.4
+
+This lecture goes over the basic curves we plot in order to select curves. 
+The first requirement is the NPSH. 
+We never want cavitation in pumps. 
+It damages the material. 
+This plot essentially puts a lower bound on our graph that we want all other curves to be above. 
+The next is the pump curve.
+This can be approxiamted as a line (analytical equation) or experimented to get a more realistic curve.
+The other curve is the system curve, you spend your whole project doing the book keeping that goes into estimating this curve.
+The last curve is the efficiency curve. 
+This curve is important because we always want the power we are paying for to go into the fluid.
+This marks a BEP point along the x-axis. 
+The operating point also marks a Q on the x-axis. 
+WE WANT THESE TO BE AS CLOSE AS POSSIBLE. 
+The combination of all these curves gives us a systematic way to select approximately the best pump.
+At a high level there are so many variables but in design just stick to the concept. 
+I want to drive the operating flowrate as close as I possibly can to the BEP.
+There are infinite many ways to do this all governed by problem constraints.
+As engineers we fiddle and tinker to get things kinda sorta right.  
+ 
