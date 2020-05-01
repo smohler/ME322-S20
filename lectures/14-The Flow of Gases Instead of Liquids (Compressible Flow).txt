@@ -1,1 +1,19 @@
 read 11.1-11.3
+
+We begin to introduce the idea of lifting this incompressible assumption.
+It turns out that this reaches as far down to the navier stokes equations themselves. 
+If the equations weren't hard enough to solve now they are even harder. 
+Remember that MATERIAL derivative. 
+Well in incompressible flow the density is now a field as well. 
+Every point in space can have a different density value. 
+This means the MATERIAL derivative of the density function is not constant but coupled with the Velocity Field and Pressure Field.
+Compressibility adds another equation to the governing system. 
+This equation is called an "Equation of State" and is heavily linked to Thermodynamics.
+So you will see that compressible flow, at its simplest applied form, is really Thermodynamics + Bernoulli.
+This is because an equation of state relates (pressure, temperature, and density).
+In gases we are VERY familiar with one of these already.
+The ideal gas law works wonderfully for air. 
+You should appreciate how as complex compressible flow is, 
+We can just combine the major points of the ideal gas law and the energy equation of streamlines to do some fluids.
+It is important to focus on the assumptions we need to do this and to appreciate how the Navier Stokes have changed from lifting one assumption.
+

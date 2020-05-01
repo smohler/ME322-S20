@@ -1,1 +1,19 @@
 read 11.5
+
+Lets add a little bit of irreversibility into the process. 
+The simplest way will be to look at a single straight duct with rough walls. 
+This addition of losses means that the velocity will change.
+You should understand at this point that fluids people do everything non-dimensional. 
+We have too many parameters to track. 
+The mach number is simply the nondimensional velcoity when a problem is close to the speed of sound.
+Fanno flow looks at how velocity changes along the striaght duct.
+That is how does dM/dx behave, where x is the axial direction down the duct.
+This is Fanno's differential equation/
+Since we're dealing with losses wouldn't you believe it but a friction factor arises in it as well!
+At the end we get a plot that looks like spaghetti thrown on graph paper.
+Fear not!
+We will look at each curve and study how to reason it. 
+We can also connect Fanno Flow analysis with Isentropic Flow in nozzles.
+For changing area sections use Isentropic and for constant area sections use Fanno. 
+ 
+

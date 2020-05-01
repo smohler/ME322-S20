@@ -1,1 +1,12 @@
 read 11.4
+
+By now the dust has been uncovered from the thermodynamics bin in your head. 
+Just as we studied a single straight pipe, a flat thin plate, and an ideal centrifugal pump with no swirl
+We will study isentropic flow. 
+This is flow with a consant value of Entropy. 
+This means that the process is reversible and is a best case scenerio all real world cases will be worse than. 
+Recall how helpful the ideal pump law was though!
+These assumptions allow us analyze flow through a duct with changing area and no heat flux.
+The process culminates in expressing density, pressure, and temperature in terms of the Mach number. 
+The actual algebra here get hard with nonlinear powers, and we have to redo it for different sections of the nozzle.
+There are only three sections to analyze though. Convering, Min Throat, and Diverging seciton.
