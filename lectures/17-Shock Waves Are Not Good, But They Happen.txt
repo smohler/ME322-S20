@@ -1,1 +1,26 @@
-read notes cengal and bole 13.1-13.3
+We now shift to something we have been ignoring for a while. 
+This actual process of a shock-wave. 
+What is it?
+Why do they happen?
+They make up about half of compressible flow analysis so we should study them. 
+The short answer.
+They are discontiunities in the dependent fields.
+They arise because you are traveling faster than the speed at which a wave can travel in the media.
+This means what the field cannot "react", "adjust", "conform" to variations of the traveling body. 
+If we consider an airfoil sitting in external flow we imagine streamlines smoothly immersing it. 
+If we rotate or move the air foil we see the streamlines "react" to this motion, even upstream!
+One question is how in the heck is upstream fluid "experiencing" effects downstream?
+Well this can be rationalized by pressure waves emminating off the airfoil surfaces.
+Lets say the body is traveling slowly, Ma<0.2.
+This infers that the pressure waves travel much faster than the body.
+Molecularly the waves are compressed regions of molecules traveling forwards due to Newtons 3rd law.
+When we say the upstream steamlines "react" to the perturbation we actually seeing an equilibirum of molecular forces take place.
+The time constant of this decay to equilibirum is so small however we just can't see it with the naked eye. 
+Now when scientists started to do this at extremely high speed Ma>1, they saw no change upstream.
+They began to sharp lines form due to sharp density, temp, pressure variations. 
+They could wiggle the airfoil back and forth and the upstream didn't seem to care at all. 
+The upstream became invariant to downstream conditions, this is exactly why we saw "choked"flow conditions. 
+This is precisely why mass flow rate has maximum values in gas dynamics. 
+The shock waves must be understood mathematically as best we can however, because they cause extrememly sharp pressure changes. 
+The pressure changes are analogous the NPSH for internal incompressible flow. 
+Shock waves are like the cavitation for compressible flow!
